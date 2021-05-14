@@ -1,2 +1,8 @@
 .idea
 metis-*/
+*.egg-info
+__pycache__
+src/ammetis/*.so
+src/ammetis/*.c
+src/*.so
+
