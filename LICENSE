@@ -1,3 +1,13 @@
+This software provides a Python interface for parts of the METIS library.
+This interface is distributed under BSD-3 License (see LICENSE information below).
+
+The METIS library itself is third-party software
+and has not been developed by the distributors.
+But the third party software METIS is distributed as well to make the installation
+process simpler. METIS is distributed under Apache-License 2.0.
+Please find the License-file for this part of the software in the metis directory.
+
+
 The 3-Clause BSD License
 
 Copyright (c) 2021 Lehrstuhl für Angewandte Mechanik, Technische Universität
