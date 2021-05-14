@@ -1,0 +1,6 @@
+# This file includes all distributed files that are not recognized by setup.py
+include README.md
+include LICENSE
+recursive-include metis-5.1.0 *
+prune __pycache__
+global-exclude *.pyc
