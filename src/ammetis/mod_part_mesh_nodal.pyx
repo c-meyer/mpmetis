@@ -59,9 +59,6 @@ def part_mesh_nodal(int ne, int nn, int[:] eptr, int[:] eind,
         Status
     """
     cdef int status
-#    c_METIS_PartMeshNodal(&ne[0], &nn[0], &eptr[0], &eind[0],
-#                          &vwgt[0], &vsize[0], &nparts[0], &tpwgts[0],
-#                          &options[0], &objval[0], &epart[0], &npart[0])
     cdef int* vwgtptr
     cdef int* vsizeptr
     cdef double* tpwgtsptr

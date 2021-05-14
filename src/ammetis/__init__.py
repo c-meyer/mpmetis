@@ -1,7 +1,6 @@
 from enum import IntEnum
 
-from ammetis.mod_part_mesh_nodal import part_mesh_nodal, \
-    create_part_mesh_nodal_options
+from ammetis.mod_part_mesh_nodal import part_mesh_nodal, set_default_options
 
 metis_noptions = 40
 

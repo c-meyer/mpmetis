@@ -8,7 +8,7 @@ from ammetis import part_mesh_nodal, metis_noptions, MetisOption,\
 def test_part_mesh_nodal():
     metis_array = np.zeros(metis_noptions, dtype=np.intc)
     set_default_options(metis_array)
-    metis_array[MetisOption.METIS_OPTION_DBGLVL] = 1
+    metis_array[MetisOption.DBGLVL] = 1
     connectivity_data = np.array([0, 1, 2, 3, 1, 4, 5, 2], dtype=np.intc)
     connectivity_ptr = np.array([0, 4, 8], dtype=np.intc)
     nparts = 2
