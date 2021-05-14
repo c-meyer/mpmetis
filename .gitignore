@@ -5,4 +5,5 @@ __pycache__
 src/ammetis/*.so
 src/ammetis/*.c
 src/*.so
-
+build/
+lib/
