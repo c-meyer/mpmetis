@@ -14,7 +14,7 @@ else:
     srcfile = "src/mpmetis/mod_part_mesh_nodal.c"
 
 extensions = [Extension("mpmetis.mod_part_mesh_nodal",
-                        ["src/mpmetis/mod_part_mesh_nodal.pyx"],
+                        [srcfile],
                         include_dirs=["metis-5.1.0/include"],
                         libraries=["metis"],
                         library_dirs=["lib/lib"],
