@@ -1,0 +1,24 @@
+dist: xenial
+
+language: python
+
+cache: pip
+
+python:
+  - "3.7"
+  - "3.8"
+
+before_install:
+  - pip install pytest
+  - wget http://glaros.dtc.umn.edu/gkhome/fetch/sw/metis/metis-5.1.0.tar.gz
+  - tar -xvf metis-5.1.0.tar.gz
+
+install:
+  - python setup.py sdist
+  - cd dist
+  - pip wheel --no-deps mpmetis-*.tar.gz
+  - pip install mpmetis-*.whl
+
+script:
+  - cd $TRAVIS_BUILD_DIR
+  - pytest
