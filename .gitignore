@@ -3,8 +3,8 @@ dist/
 metis-*/
 *.egg-info
 __pycache__
-src/ammetis/*.so
-src/ammetis/*.c
+src/mpmetis/*.so
+src/mpmetis/*.c
 src/*.so
 build/
 lib/

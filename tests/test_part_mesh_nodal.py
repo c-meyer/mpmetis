@@ -1,7 +1,7 @@
 import numpy as np
 from numpy.testing import assert_array_equal
 
-from ammetis import part_mesh_nodal, metis_noptions, MetisOption,\
+from mpmetis import part_mesh_nodal, metis_noptions, MetisOption,\
     set_default_options
 
 
