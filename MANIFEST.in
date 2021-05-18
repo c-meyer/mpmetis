@@ -1,6 +1,7 @@
 # This file includes all distributed files that are not recognized by setup.py
 include README.md
 include LICENSE
+include build.sh
 recursive-include metis-5.1.0 *
 recursive-include src/mpmetis/ *.pyx
 recursive-include src/mpmetis/ *.pxd

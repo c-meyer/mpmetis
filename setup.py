@@ -16,9 +16,9 @@ for command in build_commands:
 
 if BUILD_METIS:
     if sys.platform.startswith('linux'):
-        subprocess.run('build.sh')
+        subprocess.run(['sh', 'build.sh'], check=True)
     elif sys.platform.startswith('darwin'):
-        subprocess.run('build.sh')
+        subprocess.run(['sh', 'build.sh'], check=True)
     else:
         raise NotImplementedError('Your operating system is not supported'
                                   'by setup.py. Try to build the package'
