@@ -17,8 +17,6 @@ install:
   - pip install wheel setuptools numpy cython
   - python setup.py sdist
   - cd dist
-  - chmod +x build
-  - sh build.sh
   - pip wheel --no-deps mpmetis-*.tar.gz
   - pip install mpmetis-*.whl
 
