@@ -2,5 +2,7 @@
 include README.md
 include LICENSE
 recursive-include metis-5.1.0 *
+recursive-include src/mpmetis/ *.pyx
+recursive-include src/mpmetis/ *.pxd
 prune __pycache__
 global-exclude *.pyc
