@@ -23,7 +23,7 @@ copyright = '2021, Christian Meyer'
 author = 'Christian Meyer'
 
 # The full version, including alpha/beta/rc tags
-release = 'v0.0.1'
+release = '0.0.1'
 
 
 # -- General configuration ---------------------------------------------------
