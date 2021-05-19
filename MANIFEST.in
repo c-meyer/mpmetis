@@ -2,6 +2,7 @@
 include README.md
 include LICENSE
 include build.sh
+include get_metis.sh
 recursive-include metis-5.1.0 *
 recursive-include src/mpmetis/ *.pyx
 recursive-include src/mpmetis/ *.pxd
