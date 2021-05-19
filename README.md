@@ -3,7 +3,8 @@
 [![Build Status](https://travis-ci.com/c-meyer/mpmetis.svg?branch=master)](https://travis-ci.com/c-meyer/mpmetis)
 
 mpmetis is a simple Python wrapper for the mesh partitioning function PartMeshNodal of the METIS library.
-
+Information about installation and usage can be found in the
+[Documentation](https://mpmetis.readthedocs.io/).
 
 ## License
 
