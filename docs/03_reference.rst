@@ -1,0 +1,5 @@
+Reference
+=========
+
+.. automodule:: mpmetis
+    :members:

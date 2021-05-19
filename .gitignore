@@ -8,3 +8,5 @@ src/mpmetis/*.c
 src/*.so
 build/
 lib/
+docs/_build
+
