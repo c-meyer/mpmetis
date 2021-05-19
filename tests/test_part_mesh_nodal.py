@@ -1,13 +1,11 @@
 import numpy as np
 from numpy.testing import assert_array_equal
 
-from mpmetis import part_mesh_nodal, metis_noptions, MetisOption,\
-    set_default_options
+from mpmetis import part_mesh_nodal, create_default_options, MetisOption, MetisStatus
 
 
 def test_part_mesh_nodal():
-    metis_array = np.zeros(metis_noptions, dtype=np.intc)
-    set_default_options(metis_array)
+    metis_array = create_default_options()
     metis_array[MetisOption.DBGLVL] = 1
     connectivity_data = np.array([0, 1, 2, 3, 1, 4, 5, 2], dtype=np.intc)
     connectivity_ptr = np.array([0, 4, 8], dtype=np.intc)
@@ -21,7 +19,7 @@ def test_part_mesh_nodal():
     print('epart {}'.format(epart))
     print('npart {}'.format(npart))
     print('objval {}'.format(objval))
-    assert status == 1
+    assert status == MetisStatus.OK
     epart_desired = np.array([0, 1], dtype=np.intc)
     npart_desired = np.array([0, 0, 1, 0, 1, 1], dtype=np.intc)
     assert_array_equal(epart, epart_desired)

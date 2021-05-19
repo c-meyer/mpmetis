@@ -14,7 +14,7 @@ before_install:
   - tar -xvf metis-5.1.0.tar.gz
 
 install:
-  - pip install wheel setuptools numpy cython
+  - pip install setuptools wheel Cython numpy cmake sphinx sphinx_rtd_theme numpydoc
   - python setup.py sdist
   - cd dist
   - pip wheel --no-deps mpmetis-*.tar.gz
