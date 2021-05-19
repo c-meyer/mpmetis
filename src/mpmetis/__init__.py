@@ -22,24 +22,24 @@ class MetisOption(IntEnum):
     This enumeration gives information about the meaning of the flags in the Options Array.
 
     The following flags are available:
-    - PTYPE
-    - OBJTYPE
-    - CTYPE
-    - IPTYPE
-    - RTYPE
-    - DBGLVL
-    - NITER
-    - NCUTS
-    - SEED
-    - NO2HOP
-    - MINCONN
-    - CONTIG
-    - COMPRESS
-    - CCORDER
-    - PFACTOR
-    - NSEPS
-    - UFACTOR
-    - NUMBERING
+    * PTYPE
+    * OBJTYPE
+    * CTYPE
+    * IPTYPE
+    * RTYPE
+    * DBGLVL
+    * NITER
+    * NCUTS
+    * SEED
+    * NO2HOP
+    * MINCONN
+    * CONTIG
+    * COMPRESS
+    * CCORDER
+    * PFACTOR
+    * NSEPS
+    * UFACTOR
+    * NUMBERING
 
     """
     PTYPE = 0
@@ -67,10 +67,10 @@ class MetisStatus(IntEnum):
     This enumeration gives information about the returned status of the part_mesh_nodal algorithm
 
     The enumeration defines the following flags:
-    - OK
-    - ERROR_INPUT
-    - ERROR_MEMORY
-    - ERROR
+    * OK
+    * ERROR_INPUT
+    * ERROR_MEMORY
+    * ERROR
 
     Examples
     --------
