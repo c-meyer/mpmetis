@@ -1,5 +1,5 @@
-from mod_part_mesh_nodal cimport METIS_PartMeshNodal as c_METIS_PartMeshNodal
-from mod_part_mesh_nodal cimport METIS_SetDefaultOptions as \
+from mpmetis.mod_part_mesh_nodal cimport METIS_PartMeshNodal as c_METIS_PartMeshNodal
+from mpmetis.mod_part_mesh_nodal cimport METIS_SetDefaultOptions as \
     c_METIS_SetDefaultOptions
 
 
